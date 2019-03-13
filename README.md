@@ -1,2 +1,2 @@
-# CodeIgniter3
-Repo untuk code igniter 3
+# Template
+Template untuk buku informatika standar
