@@ -22,3 +22,45 @@ Jangan lupa kondisi server (XAMPP)  harus aktif , buka halaman http://localhost/
 \caption{Halaman Welcome dari CodeIgniter}
 \label{Gambar 1}
 \end{figure}
+
+\section {Mengenal Pola Desain MVC}
+\textit{Model,View,Controller} atau dengan singkatan \textit {MVC} adalah nama dari suatu metodologi atau pola desain \textit {design pattern} yang digunakan untuk merelasikan data dan \textit{user-interface} aplikasi secara efisien. pola awal MVC digunakan untuk rancang-bangun aplikasi desktop, khususnya untuk aplikasi-aplikasi yang dikembangkan menggunakan C++, Java,dan Smaltalk.
+Dalam Pola MVC, komponen aplikasi dibagi menjadi tiga bagian yaitu :
+\begin{enumerate}
+\item \textit{Model} yang mempresentasikan struktur data.
+\item \textit{View} yang merupakan repsentasi keluaran\textit{(output)}dari suatu model.
+\item \textit{Controller} Komponen yang bertugas mengambil masukan \textit{(model dan view)}
+\end{enumerate}
+Secara umum, pola MVC dapat digambarkan sebagai berikut :
+\begin{figure}[ht]
+\center{\includegraphics[width=1.0\textwidth]{figures/MVC.PNG}}
+\caption{Arsitektur MVC}
+\label{Gambar 2}
+\end{figure}
+
+\section{Struktur Direktori CodeIgner}
+Dalam paket distribusinya, \textit{framework} CodeIgniter memiliki tiga direktori, yaitu :
+\begin{enumerate}
+\item application
+\item system
+\item user\_guide
+\end{enumerate}
+
+\subsection {Direktori application}
+Direktori application adalah direktori yang digunakan untuk menempatkan file dari aplikasi yang akan kita buat. kita perlu menempatkan daftar \textit{model,controller,view} yang dibuat didalam direktori ini.
+Penempatan file kedalam direktori appliaction harus diklarifikasikan sesuai ketentuan yang sudah ditetapkan oleh CodeIgniter. berikut dibawah ini adalah daftar sub-direktori dan penjelasan-penjelasnnya yang terdapat didalam direktori application
+\begin{enumerate}
+\item cache berguna untuk menyimpan halaman-halaman yang telah dibuku sebelumnya dan disembunyikan \textit{cached)}
+\item config, berisi daftar file konfigurasi yang akan digunakan oleh aplikasi yang kita kembangkan
+\item controllers, berisi daftar \textit{file controller}
+\item core, digunakan untuk menempatkan daftar file kelas induk atau kelas dasar yang nantinya akan digunakan oleh aplikasi.
+\item helpers, digunakan untuk menempatkan daftar file helper(pustaka dalam bentuk fungsi) yang didefenisikan sendiri.
+\item hooks,digunakan untuk menyimpan file pendukung aplikasi
+\item language, dalam direktori ini kita dapat mendefinisikan konstanta tertentu dalam bahasa yang diinginkan.
+\item libraries, berisi file library (pustaka dalam bentuk kelas) yang kita definisikan sendiri.
+\item logs, digunakan oleh CodeIgniter untuk menyimpan \textit{file log} (catatan) yang secara otomatis akan ditulis ketika terjadi kesalahan
+\item models, berisi daftar \textit{model} yang kita perlukan oleh aplikasi.
+\item third\_party, digunakan untuk menyimpan \textit{plugin} yang dikembangkan oleh pihak ketiga.
+\item views, berisi daftar file \textit{view} yang diperlukan oleh aplikasi.
+\end{enumerate}
+
