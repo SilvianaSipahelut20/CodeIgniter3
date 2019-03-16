@@ -64,3 +64,36 @@ Penempatan file kedalam direktori appliaction harus diklarifikasikan sesuai kete
 \item views, berisi daftar file \textit{view} yang diperlukan oleh aplikasi.
 \end{enumerate}
 
+\subsection{Direktori System}
+Direktory \textit{system} berisi daftar file kode yang disediakan oleh CodeIgniter, yang diklasifikan berdasarkan fungsinya. Sub-direktori yang ada di dalam direktori \textit {system} adalah sebagai berikut :
+\begin{enumerate}
+\item core, berisi daftar file yang merupakan kelas-kelas inti dalam CodeIgniter, seperti CI\_Controller,Ci\_model dan lain-lain.
+\item database,berisi daftar \textit{file driver}dan\textit{tool} yang digunakan untuk keperluan akses \textit{database}
+\item fonts, berisi daftar \textit{file font}
+\item helper,berisi daftar \textit{file helper} standar yang disediakan oleh CodeIgniter.
+\item language, berisi daftar \textit{file} bahasa (untuk keperluan translasi bahasa).
+\item libraries, berisi daftar \textit{file} pustaka kelas standar yang disediakan oleh CodeIgniter.
+\end{enumerate}
+
+\subsection{User\_guide}
+Direktori ini hanya berisi dokumentasi CodeIgniter yang ditulis dalam format HTML. anda dapat memindahkan direktori ini ke direktori lain.
+\subsection{Alur Aplikasi CodeIgniter}
+Berikut ini adalah tahap alur aplikasi yang ditulis menggunakan ini CodeIgniter digambarkan seperti dibawah ini :
+
+\begin{figure}[ht]
+\center{\includegraphics[width=1.0\textwidth]{figures/Alur.jpg}}
+\caption{Tahap Alur CodeIgniter}
+\label{Gambar 3}
+\end{figure}
+Keterangan :
+\begin{enumerate}
+\item    Index.php berfungsi sebagai controller depan, inisialisasi sumber daya dasar yang dibutuhkan untuk menjalankan CodeIgniter.
+\item    Router memeriksa HTTP request untuk menentukan apa yang harus dilakukan dengan hal itu.
+\item   Jika file cache ada, dikirim langsung ke browser, melewati pelaksanaan sistem normal.
+\item    Keamanan Sebelum controller aplikasi dimuat, permintaan HTTP dan setiap pengguna mengirimkan data disaring untuk
+             keamanan.
+\item    Controller beban model, perpustakaan inti, pembantu, dan sumber daya lain yang diperlukan untuk memproses permintaan
+            khusus.
+\item    Lihat yang diselesaikan diberikan kemudian dikirim ke browser web untuk dilihat.Jika caching diaktifkan, pandangan-cache pertama sehingga pada permintaan selanjutnya dapat disajikan.
+\end{enumerate}
+
