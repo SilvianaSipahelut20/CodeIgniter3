@@ -1,9 +1,30 @@
-\section{Menampilkan Teks}
-
 \section{Aplikasi "HELLO WORLD"}
+Hello World adalah sintax atau script untuk mengetahui aturan sebuah tools tersebut, dimana perintah ini adalah teks yang selalu digunakan dalam pengujian awal suatu program untuk menampilkan output.
+
+\subsection{Nama-nama yang sudah didefinisikan oleh CodeIgniter3}
+Hal yang perlu diperhatikan dalam menentukan nama (baik nama controller, fungsi,variabel,maupun konstanta) kita tidak boleh menggunakan nama-nama yang sudah didefiniskan oleh CodeIgniter.
+
+\section{Nama-nama Variabel}
+Untuk mendefinisikan variabel, Anda seharusnya tidak menggunakan nama berikut :
+\begin{enumerate}
+\item \$config
+\item \$db
+\item \$lang
+\end{enumerate}
+
+\section{Controller}
+controller adalah sebuah file class yang berujuan dapat berhubungan dengan sebuah URI.
+\subsection{Nama-nama Controller}
+Berikut ini daftar nama yang tidak dapat Anda gunakan untuk mendefinisikan nama \textit{Controller}
+\begin{enumerate}
+\item ci\_controller
+\item  Default
+\item Index
+\end{enumerate}
+
+mari coba membuat controller sederhana untuk dapat melihat bagaimana controller bekerja. buat file dengan nama hello.php, dan isikan code seperti dibawah ini.
 Dalam tulisan saya sebelumnya adalah tutorial instalasi codeigniter, sekarang kita lanjut ke cara menampilkan Hello World pada CodeIgniter, kenapa hello world?
 
-Hello World adalah sintax atau script untuk mengetahui aturan sebuah tools tersebut.
 Disini kita akan menggunakan \textit{Controller} sebagai komponen utama yang memproses permintaan user.
 untuk memulainya, kita dapat menjalankan aplikasi Text Editor yang dimiliki. 
 lalu kita bisa menuliskan kode, disini ada 2 perintah yang akan saya masukan yaitu untuk perintah lengkap dan perintah \textit{simplenya} tersebut seperti ini:
@@ -34,3 +55,13 @@ setelah disimpan, kita dapat menjalankan controller diatas dengan menuliskan url
 http://localhost/ci310/index.php/hello
 permintaan diatas akan mengeksekusi metode index() yang terdapat didalam kelas Hello. 
 hasil yang diperoleh akan seperti ini :
+
+\subsection {View}
+Proses yang menampilkan hasil output dari suatu model.
+Cara membuat view pada codeigniter 
+\begin{figure}[ht]
+\center{\includegraphics[width=1.0\textwidth]{figures/views.jpg}}
+\caption{Membuat views}
+\label{Gambar 7}
+\end{figure}
+
