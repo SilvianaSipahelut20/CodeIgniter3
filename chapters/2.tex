@@ -43,25 +43,89 @@ lalu kita bisa menuliskan kode, disini ada 2 perintah yang akan saya masukan yai
 
 Kita hanya tinggal memilih yang mana yang akan kita masukan dari kedua perintah diatas pada gambar tersebut kemudian simpan file dengan nama hello.php dan ditempatkan di dalam direktori.
 
+\verb
+C:\XAMPP\htdocs\ci310\application\controllers\\
+setelah disimpan, kita dapat menjalankan controller diatas dengan menuliskan url berikut :
+http://localhost/ci310/index.php/hello
+permintaan diatas akan mengeksekusi metode index() yang terdapat didalam kelas Hello. 
+hasil yang diperoleh akan seperti ini :
+
 \begin{figure}[ht]
 \center{\includegraphics[width=1.0\textwidth]{figures/HWresult.jpg}}
 \caption{Hasil}
 \label{Gambar 6}
 \end{figure}
 
-\verb
- C:\XAMPP\htdocs\ci310\application\controllers\\
-setelah disimpan, kita dapat menjalankan controller diatas dengan menuliskan url berikut :
-http://localhost/ci310/index.php/hello
-permintaan diatas akan mengeksekusi metode index() yang terdapat didalam kelas Hello. 
-hasil yang diperoleh akan seperti ini :
-
 \subsection {View}
 Proses yang menampilkan hasil output dari suatu model.
-Cara membuat view pada codeigniter 
+Cara membuat view pada codeigniter yaitu pada gambar dibawah ini :
 \begin{figure}[ht]
-\center{\includegraphics[width=1.0\textwidth]{figures/views.jpg}}
+\center\includegraphics[width=1.0\textwidth]{figures/views.jpg}
 \caption{Membuat views}
 \label{Gambar 7}
 \end{figure}
+Seetelah membuat kode program seperti gambar diatas simpan \textit{file} diatas dengan nama yang bebas sesuai keinginan masing-masing (misalnya:belajarview.php) dan tempatkan pada direktori berikut :
+
+\verb 
+C:\XAMPP\htdocs\ci310\application\views\\
+seperti pada gambar dibawah ini :
+\begin{figure}[ht]
+\center{\includegraphics[width=1.0\textwidth]{figures/views1.jpg}}
+\caption{Menyimpan Direktori View}
+\label{Gambar 8}
+\end{figure}
+Selanjutnya,kita  harus mengubah file \textit{Controller}
+
+\verb 
+application\controllers\hello.php\\
+
+dan hasilnya akan menjadi seperti gambar dibawah ini :
+\begin{figure}[ht]
+\center{\includegraphics[width=1.0\textwidth]{figures/views2.jpg}}
+\caption{Hasil dari View}
+\label{Gambar 9}
+\end{figure}
+
+
+\section{Model}
+Model biasanya digunakan untuk repsentasi dari struktur data yang terdapat pada CodeIgniter.
+Aplikasi juga dapat dibuat hanya dengan menggunakan komponen \textit{controller} dan \textit{model}
+tanpa view, meskipun pada praktiknya hal ini seharusnya tidak dilakukan. untuk membuktikannya, 
+kita dapat membuat \textit{model} (misalnya dengan nama Hello\_model) 
+menggunakan kode berikut :
+
+\begin{figure}[ht]
+\center{\includegraphics[width=1.0\textwidth]{figures/Model.jpg}}
+\caption{Membuat model}
+\label{Gambar 10}
+\end{figure}
+jangan lupa setelah itu kita simpan pada direktori
+\verb 
+C:\XAMPP\htdocs\ci310\application\models\\
+
+\begin{figure}[ht]
+\center{\includegraphics[width=1.0\textwidth]{figures/Model2.jpg}}
+\caption{Menyimpan model}
+\label{Gambar 11}
+\end{figure}
+
+Selanjutnya,kita  harus mengubah file \textit{Controller}
+
+\verb 
+application\controllers\hello.php\\
+seperti pada gambar dibawah ini :
+\begin{figure}
+\center{\includegraphics[width=1.0\textwidth]{figures/Model3.jpg}}
+\caption{Mengubah model ke controllerl}
+\label{Gambar 12}
+\end{figure}
+
+dan setelah itu perintah akan dieksekusi dan hasilnya akan seperti ini :
+
+\begin{figure}
+\center{\includegraphics[width=1.0\textwidth]{figures/Model4.jpg}}
+\caption{Mengubah model ke controllerl}
+\label{Gambar 13}
+\end{figure}
+
 
