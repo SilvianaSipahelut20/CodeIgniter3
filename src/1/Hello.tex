@@ -1,0 +1,19 @@
+
+<?php
+class Hello extends CI_Controller {
+    public function index()  {
+	 //memuat model dengan nama 'hallo'
+	 $this->load->model('hallo_model');
+	 //menangkap objek dari kelas hallo_model
+     //	yang telah dimuat ke variabel $model
+     $model = $this->hallo_model;
+	 echo "<html>";
+	 echo "<head><title>Controller dan Model</title></head>";
+	 echo "<body>";
+	 //memanggil properti $str milik objek $model
+	 echo "<h2>". $model->str. "</h2>";
+	 echo "</body>";
+	 echo "</html>";
+	}	
+}
+  
